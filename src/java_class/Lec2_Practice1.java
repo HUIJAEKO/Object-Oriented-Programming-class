@@ -11,16 +11,23 @@ public class Lec2_Practice1 {
 		
 		int number = input.nextInt();
 		
-		//100의자리
-		int a = number/100;
-		//10의자리
-		int b = number/10%10;
-		//1의자리
-		int c = number%10;
+		if(number>=100){
+			int a = number/100;
+			int b = number/10%10;
+			int c = number%10;
+			System.out.println("The multiplication of all digits in " + number + " is " + a*b*c );
+		}else if(number>=10){
+			int b = number/10;
+			int c = number%10;
+			System.out.println("The multiplication of all digits in " + number + " is " + b*c );
+		}else{
+			System.out.println("The multiplication of all digits in " + number + " is " + number );
+		}
 		
-		System.out.println("The multiplication of all digits in " + number + " is " + a*b*c );
+		
 		
 		input.close();
 	}
 
 }
+
