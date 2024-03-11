@@ -1,8 +1,8 @@
-package java_class;
+package Lec2;
 
 import java.util.Scanner;
 
-public class Lec2_Practice1 {
+public class MultiplyNumber {
 
 	public static void main(String[] args) {
 		
@@ -30,4 +30,3 @@ public class Lec2_Practice1 {
 	}
 
 }
-

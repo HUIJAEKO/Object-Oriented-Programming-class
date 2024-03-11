@@ -1,8 +1,8 @@
-package java_class;
+package Lec3;
 
 import java.util.Scanner;
 
-public class Lec3_Practice2 {
+public class RockScissorPaper {
 
 	public static void main(String[] args) {		
 		Scanner input = new Scanner(System.in);

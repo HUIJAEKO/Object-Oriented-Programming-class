@@ -1,10 +1,10 @@
-package java_class;
+package Lec2;
 
 import java.util.Scanner;
 
-public class Lec2_Practice2 {
+public class Triangle {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
 		System.out.printf("Enter three edges (length in double):");
@@ -25,4 +25,3 @@ public class Lec2_Practice2 {
 	}
 
 }
-

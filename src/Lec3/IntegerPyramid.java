@@ -1,11 +1,11 @@
-package java_class;
+package Lec3;
 
 import java.util.Scanner;
 
-public class Lec3_Practice1 {
-	
+public class IntegerPyramid {
+
 	public static void main(String[] args) {
-	
+		
 		Scanner input = new Scanner(System.in);
 		System.out.printf("Enter the number of lines(0~15): ");		
 		
