@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Reverse {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter Integer(1~9999): ");
+        System.out.print("Enter Integer: ");
         int number = input.nextInt();
         if(isPalindrome(number)){
             System.out.println(reverse(number) + " is palindrome");
