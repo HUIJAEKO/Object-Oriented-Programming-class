@@ -25,7 +25,16 @@ public class Employee {
             employeeTimeArray[i][0] = i;
             employeeTimeArray[i][1] = totalTime;
         }
-        Arrays.sort(employeeTimeArray, (a,b) -> b[1] - a[1]);
+
+        for (int i = 0; i < employeeTimeArray.length - 1; i++) {
+            for (int j = 0; j < employeeTimeArray.length - i - 1; j++) {
+                if (employeeTimeArray[j][1] < employeeTimeArray[j + 1][1]) {
+                    int[] temp = employeeTimeArray[j];
+                    employeeTimeArray[j] = employeeTimeArray[j + 1];
+                    employeeTimeArray[j + 1] = temp;
+                }
+            }
+        }
 
         for(int i=0; i<8; i++){
             System.out.println("Employee" + employeeTimeArray[i][0] + " : " + employeeTimeArray[i][1]);
