@@ -7,7 +7,7 @@ public class IntegerPyramid {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		System.out.printf("Enter the number of lines(0~15): ");		
+		System.out.print("Enter the number of lines(0~15): ");
 		
 		int num = input.nextInt();
 		//wrong number

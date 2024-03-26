@@ -26,12 +26,12 @@ public class Employee {
             employeeTimeArray[i][1] = totalTime;
         }
 
-        for (int i = 0; i < employeeTimeArray.length - 1; i++) {
-            for (int j = 0; j < employeeTimeArray.length - i - 1; j++) {
+        for (int i = 0; i < employeeTimeArray.length; i++) {
+            for (int j = 0; j < employeeTimeArray.length - 1; j++) {
                 if (employeeTimeArray[j][1] < employeeTimeArray[j + 1][1]) {
-                    int[] temp = employeeTimeArray[j];
+                    int[] employee = employeeTimeArray[j];
                     employeeTimeArray[j] = employeeTimeArray[j + 1];
-                    employeeTimeArray[j + 1] = temp;
+                    employeeTimeArray[j + 1] = employee;
                 }
             }
         }
