@@ -3,6 +3,26 @@ package Lec6;
 import java.util.Scanner;
 
 public class LinearEquation {
+//    -----------------------
+//         LinearEquation
+//    -----------------------
+//    a : double
+//    b : double
+//    c : double
+//    d : double
+//    e : double
+//    f : double
+//    -----------------------
+//    getA() : double
+//    getB() : double
+//    getC() : double
+//    getD() : double
+//    getE() : double
+//    getF() : double
+//    getX() : double
+//    getY() : double
+//    isSolvable() : boolean
+//    -----------------------
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.print("a, b, c, d, e, f : ");
@@ -20,29 +40,6 @@ public class LinearEquation {
             System.out.println("The equation has no solution");
         }
     }
-
-//    -----------------------
-//    LinearEquation variable
-//    -----------------------
-//    a : double
-//    b : double
-//    c : double
-//    d : double
-//    e : double
-//    f : double
-//    -----------------------
-//            method
-//    -----------------------
-//    getA() : double
-//    getB() : double
-//    getC() : double
-//    getD() : double
-//    getE() : double
-//    getF() : double
-//    getX() : double
-//    getY() : double
-//    isSolvable() : boolean
-//    -----------------------
     private double a, b, c, d, e, f;
     public LinearEquation(double a, double b, double c, double d, double e, double f) {
         this.a = a;
