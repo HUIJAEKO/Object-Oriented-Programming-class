@@ -1,26 +1,23 @@
 package Lec7;
 
-
-public class StackOfIntegers {
+public class Queue {
     public static void main(String[] args){
-        StackOfIntegers stackOfIntegers = new StackOfIntegers();
+        Queue queue = new Queue();
         for (int i = 1; i <= 20; i++)
-            stackOfIntegers.enqueue(i);
-        while (!stackOfIntegers.empty())
-            System.out.print(stackOfIntegers.dequeue() + " ");
+            queue.enqueue(i);
+        while (!queue.empty())
+            System.out.print(queue.dequeue() + " ");
     }
-
-
 
     private int[] elements;
     private int size;
     public static final int DEFAULT_CAPACITY = 8;
 
-    public StackOfIntegers() {
+    public Queue() {
         this(DEFAULT_CAPACITY);
     }
 
-    public StackOfIntegers(int capacity) {
+    public Queue(int capacity) {
         elements = new int[capacity];
     }
 
