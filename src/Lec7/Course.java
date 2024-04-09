@@ -21,22 +21,20 @@ public class Course {
         course2.students[2] = "bo";
         course2.students[3] = "bu";
 
+        System.out.println("number of student class1: " + course1.getNumberOfStudents());
+        course1.printStudents();
         course1.dropStudent("ko");
         System.out.println("number of student class1 after drop ko: " + course1.getNumberOfStudents());
-        for (int i = 0; i < course1.getNumberOfStudents(); i++) {
-            System.out.print(course1.students[i] + " ");
-        }
-        System.out.println();
+        course1.printStudents();
         course1.clear();
         System.out.println("number of students after clear course1: " + course1.getNumberOfStudents());
 
         System.out.println();
+        System.out.println("number of student class2: " + course2.getNumberOfStudents());
+        course2.printStudents();
         course2.dropStudent("bae");
         System.out.println("number of student class2 after drop bae " + course2.getNumberOfStudents());
-        for (int i = 0; i < course2.getNumberOfStudents(); i++) {
-            System.out.print(course2.students[i] + " ");
-        }
-        System.out.println();
+        course2.printStudents();
         course2.clear();
         System.out.println("number of students after clear course2: " + course2.getNumberOfStudents());
 
@@ -89,5 +87,12 @@ public class Course {
     public void clear(){
         this.students = new String[4];
         numberOfStudents = 0;
+    }
+
+    public void printStudents() {
+        for (int i = 0; i < getNumberOfStudents(); i++) {
+            System.out.print(students[i] + " ");
+        }
+        System.out.println();
     }
 }
