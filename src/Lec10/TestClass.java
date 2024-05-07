@@ -69,6 +69,11 @@ class Circle extends GeometricObjectComparable {
     public void setRadius(double radius) {
         this.radius = radius;
     }
+
+    @Override
+    public String toString() {
+        return "[Circle] radius = " + radius;
+    }
 }
 
 class Rectangle extends GeometricObjectComparable {
@@ -103,5 +108,10 @@ class Rectangle extends GeometricObjectComparable {
 
     public void setHeight(double height) {
         this.height = height;
+    }
+
+    @Override
+    public String toString() {
+        return "[rectangle] width: " + width + " height: " + height;
     }
 }
