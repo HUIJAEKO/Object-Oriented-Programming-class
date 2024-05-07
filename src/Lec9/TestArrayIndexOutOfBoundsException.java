@@ -1,5 +1,4 @@
 package Lec9;
-
 import java.util.Scanner;
 
 public class TestArrayIndexOutOfBoundsException {
